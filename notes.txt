@@ -1,0 +1,29 @@
+Notes.txt:
+----------
+
+*** Logfile:
+01.09.22 20:17:57 100.26.27.59 (Arg:'{"packetId":0,"deviceType":1,"deviceId":0,"userApplicationId":0,"organizationId":65759,"data":"VGhpcyBpcyBhIHRlc3QgbWVzc2FnZS4gVGhlIHBhY2tldElkIGFuZCBkZXZpY2VJZCBhcmUgbm90IHBvcHVsYXRlZCwgYnV0IHdpbGwgYmUgZm9yIGEgcmVhbCBtZXNzYWdlLg==","len":100,"status":0,"hiveRxTime":"2022-09-01T20:17:57"}')
+01.09.22 21:56:38 100.26.27.59 (Arg:'{"packetId":32995876,"deviceType":1,"deviceId":8692,"userApplicationId":0,"organizationId":65759,"data":"IWpvZW1iZWRkZWRAZ21haWwuY29tIERhcyBpc3QgZWluZSBUZXN0bmFjaHJpY2h0MiB2b24gQkxFLCAxLjAuIDIwOjE5","len":69,"status":0,"hiveRxTime":"2022-09-01T21:56:37"}')
+
+
+*** As sent by SWARM Delivery Webhook - Real World Data:
+02.09.22 16:50:12 100.26.27.59 (
+Arg:'{
+	"packetId":33060892,
+	"deviceType":1,
+	"deviceId":8692,
+	"userApplicationId":0,
+	"organizationId":65759,
+	"data":"TXNnT2huZU1haWwsIGdlc2VuZGV0IDIuOS4gIDE2OjA1", // "MsgOhneMail, gesendet 2.9.  16:05"
+	"len":33,
+	"status":0,
+	"hiveRxTime":"2022-09-02T16:50:11"
+	}') 
+- Headers:
+(Connection: 'close')
+(Content-Length: '206')
+(Accept-Encoding: 'gzip,deflate')
+(User-Agent: 'Apache-HttpClient/4.5.13 (Java/17.0.4.1)')
+(Content-Type: 'application/json; charset=UTF-8')
+(Mailto: 'jowi@me.com')
+(Host: 'joembedded.de')
