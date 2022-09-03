@@ -1,24 +1,25 @@
 # *** PROJECT SPACEBEE ***
 ## A PHP-Webhook - (C)JoEmbedded.de
 ![ProjectSpacebee Logo](./img/spacebee.jpg)
-***
 
 This repository contains a webhook in PHP for the satellite IoT of SWARM (https://swarm.space). With SWARM, messages can be sent and received worldwide via satellite in the simplest way!
 
-SWARM operates a network of currently (09/2022) about 150 small satellites in low earth orbit of about 500-600km height. The speed of these "LEO" satellites (for "Low-Earth-Orbit") is about 7.5 km/sec and thus almost 22 times the speed of sound! One orbit around the earth takes about 90 minutes. The naming is original: the satellites all bear the name "Spacebee-xx" and this swarm sends its data to the "Hive" ("Beehive").
+SWARM operates a network of currently (09/2022) about 150 small satellites in low earth orbit of about 500-600km height. The speed of these "LEO" satellites (for "Low-Earth-Orbit") is about 7.5 km/sec and thus almost 22 times the speed of sound! One orbit around the earth takes about 90 minutes. The naming is original: the satellites all bear the name "Spacebee-xx" and this swarm sends its data to the "Hive" ("BeeHive").
 
 Sparkfun offers an Eval kit for this purpose, which also contains the necessary software to communicate with the M138 modem (https://www.sparkfun.com/products/19236). The first 50 messages are free! After that, there is a charge of 5 US$/month for a maximum of 750 messages (max. 192 bytes each). In total, that is 140 kB (as of 09/2022)! Downlink (messages to the modem) is also possible, but only if the SWARM server knows the GPS data of the modem.
 
-To transport the data from the SWARM server, webhooks are an easy and fast way. This is a simple demo implementation in PHP. All incoming messages are forwarded as mail to the specified address.
+To transport the data from the SWARM server, webhooks are an easy and fast way. This is a simple demo implementation in PHP ('deliver.php'). All incoming messages are forwarded as mail to the specified address.
 
+***
 ## Getting started with the Eval-Kit in a nutshell
 
 ![Sparkfun M138](./img/m138_kit.jpg)
-Assembled Eval Kit
 
+Assembled Eval kit
 
 ![M138 Back](./img/modem_m138.jpg)
-Back side of the Eval Kit.
+
+Back side of the Eval kit.
 
 
 The Sparkfun carrier board basically only contains a USB COM port driver, a mPCI52 socket for the M138 modem and a USB-C socket. The modem requires current peaks of max. 1 ampere, so it is recommended to use a USB3 hub with an external power supply. The external power supply also has the advantage that the PC can be switched off separately from the modem.
@@ -27,7 +28,7 @@ The GPS antenna supplied should be fixed (as in the picture) a few cm above the 
 
 The optimal place to operate the modem is outdoors, with as clear an all-round view of the sky as possible and no objects within a radius of about 1 metre around the antenna. But in tests, the transmission worked even in the office when the modem was directly next to a large window area, it just took longer...
 
-After registering on the SWARM Hive (https://bumblebee.hive.swarm.space ), the modem must be registered via QR code. The easiest way to do this is by smartphone.
+After registering on the SWARM Hive (https://bumblebee.Hive.swarm.space ), the modem must be registered via QR code. The easiest way to do this is by smartphone.
 
 The commands of the modem are clear and can be sent very easily with the SparkFun M138 GUI.
 
@@ -38,9 +39,9 @@ As a rule, it does not take long for satellites to come within range (on average
 
 The range of SWARM data transmission is interesting: Under good conditions, the modem can track a spacbee for up to about 8 minutes. In this time, the satellite covers almost 4000 km! Communication takes place in the VHF band at about 140 MHz and a LoRa-based transmission system is used.
 
-A maximum of 90 minutes (but usually much earlier) after a Spacbee has received a message from the modem, it is sent to the hive via a ground station.
+A maximum of 90 minutes (but usually much earlier) after a Spacbee has received a message from the modem, it is sent to the Hive via a ground station.
 
-For the downlink, i.e. data from the hive to the modem, the hive uses the (known) GPS position of the modem to transmit to one of the next passing Spacbees. Therefore, this can sometimes take a little longer (often in the range of 2-12 hours). But uplink is the more important direction anyway.
+For the downlink, i.e. data from the Hive to the modem, the Hive uses the (known) GPS position of the modem to transmit to one of the next passing Spacbees. Therefore, this can sometimes take a little longer (often in the range of 2-12 hours). But uplink is the more important direction anyway.
 
 
 ### How to send a simple message with the SparkFun M138 GUI:
@@ -53,12 +54,17 @@ For the downlink, i.e. data from the hive to the modem, the hive uses the (known
 
 ### Setup the Webhook:
 ![Setup Webhook](./img/setup_a.png)
+
 'Test' sends a dummy message. 
 
 ### A nice gimmick:
 
 If the message starts with '!', followed by a valid mailaddress and a space character, the text after the space (and only the text) is also sent to this mailaddress.
 So e.g. ```TD "!joembedded@gmail.com Can you hear me, Jo?"``` will send it to me ;-)
+
+### A Solar powered SWARM Bluetooth LE gateway:
+
+(Docu will follow soon)
 
 ***
 
