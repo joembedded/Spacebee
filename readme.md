@@ -47,8 +47,8 @@ For the downlink, i.e. data from the Hive to the modem, the Hive uses the (known
 ### How to send a simple message with the SparkFun M138 GUI:
 
 * Check, if at least Date/Time is valid (from GPS) (```DT @``` should redturn a value)
-* Recommended: set Receiver Test to 1 -  secs with ```RT 1```
-* Send the message (add it to transmit queque): ```TD "Can you hear me, Major Tom?"```
+* Recommended: set Receiver Test to e.g. 10 secs with ```RT 10``` (Setting stored in NV memory)
+* Send the message (add it to transmit queque in NV memory): ```TD "Can you hear me, Major Tom?"```
 * Wait for arrival...
 
 ## How to forward incomming messages via Webhook:
