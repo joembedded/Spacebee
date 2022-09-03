@@ -1,4 +1,4 @@
-# *** PROJECT Spacebee ***
+# *** PROJECT SPACEBEE ***
 ## A PHP-Webhook - (C)JoEmbedded.de
 ![ProjectSpacebee Logo](./img/spacebee.jpg)
 
