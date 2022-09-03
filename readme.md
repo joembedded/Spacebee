@@ -1,5 +1,5 @@
 # *** PROJEKT SPACEBEE ***
-## A PHP-Webhook 
+## A PHP Webhook 
 ![ProjectSpacebee Logo](./img/spacebee.jpg)
 
 This repository contains a webhook in PHP for the satellite IoT of SWARM (https://swarm.space). With SWARM, messages can be sent and received worldwide via satellite in the simplest way!
@@ -85,6 +85,15 @@ So e.g. ```TD "!joembedded@gmail.com Can you hear me, Jo?"``` will send it to me
 
 * Based on the Open-SDI12-Blue project (https://github.com/joembedded/Open-SDI12-Blue). 
 * Docu will follow soon!
+
+***
+
+# Sponsors #
+This project was sponsered and supported by:
+
+!['TERRA_TRANSFER'](./Sponsors/TerraTransfer.jpg "TERRA_TRANSFER")
+
+Link: [TerraTransfer GmbH, Bochum, Germany](https://www.terratransfer.org)
 
 ***
 
