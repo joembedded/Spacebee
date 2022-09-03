@@ -1,6 +1,6 @@
-# *** PROJECT SPACEBEE ***
+# *** PROJECT Spacebee ***
 ## A PHP-Webhook - (C)JoEmbedded.de
-![ProjectSpacebee Logo](./img/spacebee.jpg)
+![ProjectSpacebee Logo](./img/Spacebee.jpg)
 
 This repository contains a webhook in PHP for the satellite IoT of SWARM (https://swarm.space). With SWARM, messages can be sent and received worldwide via satellite in the simplest way!
 
@@ -32,7 +32,7 @@ After registering on the SWARM Hive (https://bumblebee.Hive.swarm.space ), the m
 
 The commands of the modem are clear and can be sent very easily with the SparkFun M138 GUI.
 
-It is advisable to set the "Receive Test" to e.g. 10 seconds. During this time, the modem continuously displays the noise floor or detected satellites. After Power On, it takes a while (approx. 15 - 120 seconds) until the GPS of the modem could receive the time. Only when the time is valid can messages be sent. After another (max. 10 minutes), the GPS should also know the position. Important: For messages, the position at the time of entry (not at the time of transmission) is used. However, all messages entered are stored on the modem in a non-volatile memory (for 2 days by default). Therefore, you can e.g. enter the messages in the office and then bring the modem (e.g. with a USB power supply) outdoors and wait.
+It is advisable to set the "Receive Test" to e.g. 10 seconds. During this time, the modem continuously displays the noise floor or detected satellites. After Power On, it takes a while (approx. 15 - 120 seconds) until the GPS of the modem could receive the time. Only when the modem's time is valid messages will be accepted. After another (max. 10 minutes), the GPS should also know the position. Important: For messages, the position at the time of entry (not at the time of transmission) is used. However, all messages entered are stored on the modem in a non-volatile memory (for 2 days by default). Therefore, you can e.g. enter the messages in the office and then bring the modem (e.g. with a USB power supply) outdoors and wait.
 With a running PC in the direct vicinity, the noise floor is often higher than -90 dBm and thus too high, but even a few metres away from "interferers" is quite sufficient to reach top values (below -100 dBm), even in urban areas. 
 
 As a rule, it does not take long for satellites to come within range (on average, about 15-60 minutes max.). For the "impatient", SWARM offers the tool Pass-Checker (https://kube.tools.swarm.space), but since the orbital data of almost all satellites are public, there are many other visualisation tools available on the internet (e.g. https://www.n2yo.com, https://satellitetracker.net/ etc.). Tip: search for "Spacebee-xx").
