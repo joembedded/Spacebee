@@ -1,6 +1,6 @@
 # *** PROJECT Spacebee ***
 ## A PHP-Webhook - (C)JoEmbedded.de
-![ProjectSpacebee Logo](./img/Spacebee.jpg)
+![ProjectSpacebee Logo](./img/spacebee.jpg)
 
 This repository contains a webhook in PHP for the satellite IoT of SWARM (https://swarm.space). With SWARM, messages can be sent and received worldwide via satellite in the simplest way!
 
