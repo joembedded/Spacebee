@@ -15,11 +15,11 @@ To transport the data from the SWARM server, webhooks are an easy and fast way. 
 
 ![Sparkfun M138](./img/m138_kit.jpg)
 
-Assembled Eval kit
+	_Assembled Eval kit_
 
 ![M138 Back](./img/modem_m138.jpg)
 
-Back side of the Eval kit.
+	_Back side of the Eval kit._
 
 
 The Sparkfun carrier board basically only contains a USB COM port driver, a mPCI52 socket for the M138 modem and a USB-C socket. The modem requires current peaks of max. 1 ampere, so it is recommended to use a USB3 hub with an external power supply. The external power supply also has the advantage that the PC can be switched off separately from the modem.
@@ -55,7 +55,7 @@ For the downlink, i.e. data from the Hive to the modem, the Hive uses the (known
 ### Setup the Webhook:
 ![Setup Webhook](./img/setup_a.png)
 
-'Test' sends a dummy message. 
+	_'Test' sends a dummy message._
 
 ### A nice gimmick:
 
