@@ -19,7 +19,7 @@ _Assembled Eval kit_
 
 ![M138 Back](./img/modem_m138.jpg)
 
-_Back side of the Eval kit._
+_Back side of the Eval kit_
 
 
 The Sparkfun carrier board basically only contains a USB COM port driver, a mPCI52 socket for the M138 modem and a USB-C socket. The modem requires current peaks of max. 1 ampere, so it is recommended to use a USB3 hub with an external power supply. The external power supply also has the advantage that the PC can be switched off separately from the modem.
@@ -47,15 +47,16 @@ For the downlink, i.e. data from the Hive to the modem, the Hive uses the (known
 ### How to send a simple message with the SparkFun M138 GUI:
 
 * Check, if at least Date/Time is valid (from GPS) (```DT @``` should redturn a value)
-* Recommended: set Receiver Test to 1 -  secs with ```RT 1````
+* Recommended: set Receiver Test to 1 -  secs with ```RT 1```
 * Send the message (add it to transmit queque): ```TD "Can you hear me, Major Tom?"```
+* Wait for arrival...
 
 ## How to forward incomming messages via Webhook:
 
 ### Setup the Webhook:
 ![Setup Webhook](./img/setup_a.png)
 
-_'Test' sends a dummy message._
+_'Test' sends a dummy message_
 
 ### A nice gimmick:
 
