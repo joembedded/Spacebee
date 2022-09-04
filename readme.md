@@ -1,4 +1,4 @@
-# /// <b>&#127744; --Preliminary-- &#127744;</b> ///
+# <b>&#127744;&#127744;&#127744; --Preliminary-- &#127744;&#127744;&#127744;</b>
 # *** PROJEKT SPACEBEE ***
 ## A PHP Webhook 
 ![ProjectSpacebee Logo](./img/spacebee.jpg)
@@ -28,7 +28,7 @@ _Assembled Eval kit. A large ground plane and a matched antenna is absolutely im
 _Back side of the Eval kit_
 
 
-The Sparkfun carrier board basically only contains a USB COM port driver, a mPCI52 socket for the M138 modem and a USB-C socket. The modem requires current peaks of max. 1 ampere, 
+The Sparkfun carrier board basically only contains a USB COM port driver, a mPCI52 socket for the M138 modem and a USB-C socket, Groundplane and antennas. The modem requires current peaks of max. 1 ampere @ 3-5 volts, 
 so it is recommended to use a USB3 hub with an external power supply. 
 The external power supply also has the advantage that the PC can be switched off separately from the modem (and modem meanwhile still running).
 
@@ -89,8 +89,8 @@ So e.g. ```TD "!joembedded@gmail.com Can you hear me, Jo?"``` will send it to me
 
 ***
 
-# Sponsors #
-This project was sponsered and supported by:
+# Sponsors
+## This project was sponsered and supported by:
 
 !['DUMMY'](./Sponsors/dummy.jpg)
 
