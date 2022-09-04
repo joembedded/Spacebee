@@ -28,7 +28,7 @@ _Assembled Eval kit. A large ground plane and a matched antenna is absolutely im
 _Back side of the Eval kit_
 
 
-The Sparkfun carrier board basically only contains a USB COM port driver, a mPCI52 socket for the M138 modem and a USB-C socket, Groundplane and antennas. The modem requires current peaks of max. 1 ampere @ 3-5 volts, 
+The Sparkfun carrier board basically only contains a USB COM port driver, a mPCI52 socket for the M138 modem and a USB-C socket, groundplane and antennas. The modem requires current peaks of max. 1 ampere @ 3-5 volts, 
 so it is recommended to use a USB3 hub with an external power supply. 
 The external power supply also has the advantage that the PC can be switched off separately from the modem (and modem meanwhile still running).
 
@@ -65,7 +65,7 @@ For the downlink, i.e. data from the Hive to the modem, the Hive uses the (known
 
 ### How to send a simple message with the SparkFun M138 GUI:
 
-* Check, if at least Date/Time is valid (from GPS) (```DT @``` should redturn a value)
+* Check, if at least Date/Time is valid (from GPS) (```DT @``` should return a value)
 * Recommended: set Receiver Test to e.g. 10 secs with ```RT 10``` (Setting stored in NV memory)
 * Send the message (add it to transmit queque in NV memory): ```TD "Can you hear me, Major Tom?"```
 * Wait for arrival...
