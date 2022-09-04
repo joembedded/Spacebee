@@ -1,3 +1,4 @@
+# /// <b>&#127744; --Preliminary-- &#127744;</b> ///
 # *** PROJEKT SPACEBEE ***
 ## A PHP Webhook 
 ![ProjectSpacebee Logo](./img/spacebee.jpg)
@@ -6,7 +7,7 @@ This repository contains a webhook in PHP for the satellite IoT of SWARM (https:
 
 SWARM operates a network of currently (09/2022) about 150 small satellites in low earth orbit of about 500-600km height. The speed of these "LEO" satellites (for "Low-Earth-Orbit") is about 7.5 km/sec 
 and thus almost 22 times the speed of sound! One orbit around the earth takes about 90 minutes. The naming is figurative: 
-the satellites all bear the name "Spacebee-xx" and this swarm sends its data to the "Hive".
+the satellites all bear the name "Spacebee-xx". The Spacebees fly uncontrolled and the orbits associate the image of a swarm with "Hive" as designation of their Server.
 
 Sparkfun offers an Eval kit, which also contains the necessary software to communicate with the M138 modem (https://www.sparkfun.com/products/19236). 
 The first 50 messages are free! After that, there is a charge of 5 US$/month for a maximum of 750 messages (max. 192 bytes each). 
@@ -20,7 +21,7 @@ All incoming messages are forwarded as mail to the specified address.
 
 ![Sparkfun M138](./img/m138_kit.jpg)
 
-_Assembled Eval kit_
+_Assembled Eval kit. A large ground plane and a matched antenna is absolutely important!_
 
 ![M138 Back](./img/modem_m138.jpg)
 
@@ -51,14 +52,14 @@ Tests have shown, that Bluetooth LE has no significant influence to the noiseflo
 
 As a rule, it does not take long for satellites to come within range (on average, about 15-60 minutes max.). For the "impatient", SWARM offers the tool Pass-Checker (https://kube.tools.swarm.space), 
 but since the orbital data of almost all satellites are public, there are many other visualisation tools available on the internet (e.g. https://www.n2yo.com, https://satellitetracker.net/ etc.). 
-Tip: search for "Spacebee-xx").
+Tip: search for satellite names "Spacebee-xx").
 
-The distance range of SWARM data transmission is impressive: Under good conditions, the modem can track a Spacbee for up to about 8 minutes. In this time, the satellite has moved almost 4000 km! 
-Communication takes place in the VHF band at about 140 MHz @ 1 Watt TX power and a LoRa-based transmission system is used.
+The distance range of SWARM data transmission is incredible impressive: Under good conditions, the modem can track a Spacbee for up to about 8 minutes. In this time, the satellite has moved almost 4000 km! 
+Communication takes place in the VHF band at about 140 MHz @ 1 Watt TX power and a LoRa-based transmission system is used. Remember: a large ground plane and a matched antenna is absolutely important!
 
 A maximum of 90 minutes (but usually much faster) after a Spacbee has received a message from the modem, it is sent to the Hive via a ground station.
 
-For the downlink, i.e. data from the Hive to the modem, the Hive uses the (known) GPS position of the modem to transmit to one of the next passing Spacbees. Therefore, this can sometimes take a little longer 
+For the downlink, i.e. data from the Hive to the modem, the Hive uses the (known) GPS position of the modem to transmit to one of the next passing Spacbee. Therefore, this can sometimes take a little longer 
 (often in the range of 2-12 hours). But uplink is the more important direction anyway.
 
 
@@ -90,6 +91,11 @@ So e.g. ```TD "!joembedded@gmail.com Can you hear me, Jo?"``` will send it to me
 
 # Sponsors #
 This project was sponsered and supported by:
+
+!['DUMMY'](./Sponsors/dummy.jpg)
+
+Link: [Platzhalter](https://joembedded.de)
+
 
 !['TERRA_TRANSFER'](./Sponsors/TerraTransfer.jpg "TERRA_TRANSFER")
 
