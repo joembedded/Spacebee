@@ -1,6 +1,5 @@
-# <b>&#127744;&#127744;&#127744; --Preliminary-- &#127744;&#127744;&#127744;</b>
 # *** PROJEKT SPACEBEE ***
-## A PHP Webhook 
+## A PHP Webhook for SWARM IoT Satellites
 ![ProjectSpacebee Logo](./img/spacebee.jpg)
 
 This repository contains a webhook in PHP for the satellite IoT of SWARM (https://swarm.space). With SWARM, messages can be sent and received worldwide via satellite in the simplest way!
@@ -40,6 +39,8 @@ But in tests, the transmission worked even in the office when the modem was dire
 After registering on the SWARM Hive (https://bumblebee.Hive.swarm.space ), the modem must be registered via QR code. The easiest way to do this is by smartphone.
 
 The commands of the modem are simple and can be sent very easily with the SparkFun M138 GUI.
+
+The M138 modem contain 3 very bright LEDs: &#128308;Red will be blinking after Power On until at least a valid GPS time is found, &#128994;Green flashed all few seconds and &#128309;Blue signals satellite activity.
 
 It is advisable to set the "Receive Test" to e.g. 10 seconds. During this time, the modem continuously displays the noise floor or detected satellites. 
 After Power On, it takes a while (approx. 15 - 120 seconds) until the GPS of the modem could receive the time from GPS. Only when the modem's time is valid, messages will be accepted. 
@@ -92,9 +93,9 @@ So e.g. ```TD "!joembedded@gmail.com Can you hear me, Jo?"``` will send it to me
 # Sponsors
 ## This project was sponsered and supported by:
 
-!['DUMMY'](./Sponsors/dummy.jpg)
+!['Elektor'](./Sponsors/elektor.jpg)
 
-Link: [Platzhalter](https://joembedded.de)
+Link: [Elektor](https://https://www.elektormagazine.de)
 
 
 !['TERRA_TRANSFER'](./Sponsors/TerraTransfer.jpg "TERRA_TRANSFER")
