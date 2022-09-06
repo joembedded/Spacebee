@@ -40,7 +40,10 @@ After registering on the SWARM Hive (https://bumblebee.Hive.swarm.space ), the m
 
 The commands of the modem are simple and can be sent very easily with the SparkFun M138 GUI.
 
-The M138 modem contain 3 very bright LEDs: &#128308;Red will be blinking after Power On until at least a valid GPS time is found, &#128994;Green flashed all few seconds and &#128309;Blue signals satellite activity.
+The M138 modem contain 3 very bright LEDs: 
+&#128308; Red will be blinking after Power On until at least a valid GPS time is found,
+&#128994; Green flashes all few seconds and 
+&#128309; Blue signals satellite activity.
 
 It is advisable to set the "Receive Test" to e.g. 10 seconds. During this time, the modem continuously displays the noise floor or detected satellites. 
 After Power On, it takes a while (approx. 15 - 120 seconds) until the GPS of the modem could receive the time from GPS. Only when the modem's time is valid, messages will be accepted. 
