@@ -96,7 +96,7 @@ This is a real world solution for up to 50 sensors, connected via SDI-12 (LowVol
 ![Nirwana2Cloud](./img/Nirvana2Cloud_swarm.jpg)
 ![Nirwana2Cloud](./img/station_leobee.jpg)
 
-_'Nirwana2Cloud': The Webhook from this Repo already can decode the sensor data! _
+_'Nirwana2Cloud': The Webhook from this Repo already can decode the sensor data!_
 
 
 * Based on the Open-SDI12-Blue project (https://github.com/joembedded/Open-SDI12-Blue). 
