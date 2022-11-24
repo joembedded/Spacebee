@@ -124,10 +124,10 @@ for($i=0;$i<$cnt;$i++){ // Make data printable
 				$txtdata.= sprintf(' Time(UTC):%s', gmdate("d.m.Y H:i:s",$unixsecs));
 				$i+=4;
 				// Generate Traveltime:
-				if(isset($args['hiveRxTime'])){
-					$traveltime=strtotime($args['hiveRxTime'])-$unixsecs;
-					$txtdata.= sprintf(' Traveltime(min):%d:%02u',$traveltime/60,$traveltime%60);
-				}
+				$traveltime=time()-$unixsecs;
+				$th=floor($traveltime/3600); $traveltime -= $th*3600;
+				$tmin=floor($traveltime/60);  $traveltime -= $tmin*60;
+				$txtdata.= sprintf(' Traveltime:%dh,%dmin,%dsec',$th,$tmin,$traveltime);
 			}
 			if($cnt-$i>=1){
 				$anzn=ord($strdata[$i+1]);
