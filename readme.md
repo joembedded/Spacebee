@@ -86,20 +86,28 @@ _'Test' sends a dummy message_
 If the message starts with '!', followed by a valid mailaddress and a space character, the text after the space (and only the text) is also sent to this mailaddress.
 So e.g. ```TD "!joembedded@gmail.com Can you hear me, Jo?"``` will send it to me ;-)
 
-### A Solar powered SWARM Bluetooth LE gateway:
+### What comes next:
+
+## Nirwana2Cloud - IoT-Satellite gateway for the Nowhere
+### With SDI-12-Interface and BluetoothLE
+
+This is a real world solution for up to 50 sensors, connected via SDI-12 (LowVoltage).
+
+![Nirwana2Cloud](./img/Nirvana2Cloud_swarm.jpg)
+![Nirwana2Cloud](./img/station_leobee.jpg)
+
+_'Nirwana2Cloud': The Webhook from this Repo already can decode the sensor data! _
+
 
 * Based on the Open-SDI12-Blue project (https://github.com/joembedded/Open-SDI12-Blue). 
-* Docu will follow soon!
+* The Open-SDI12-Blue project already was ported to many meteorolgical and hydrological sensors
+* Almost ALL SDI-12 sensors on the market with a low supply voltage can be connected!
+* Docu will follow soon...
 
 ***
 
 # Sponsors
 ## This project was sponsered and supported by:
-
-!['Elektor'](./Sponsors/elektor.jpg)
-
-Link: [Elektor](https://https://www.elektormagazine.de)
-
 
 !['TERRA_TRANSFER'](./Sponsors/TerraTransfer.jpg "TERRA_TRANSFER")
 

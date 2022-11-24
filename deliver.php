@@ -6,6 +6,7 @@
 * (C)JoEmbedded.de
 *
 * Added support for binary payload
+* Please note: 'deliver_light.php' is a smaller version: message only, without payload decoder
 */
 
 error_reporting(E_ALL);
@@ -122,6 +123,11 @@ for($i=0;$i<$cnt;$i++){ // Make data printable
 				$unixsecs=get_u32(substr($strdata,$i+1,4));
 				$txtdata.= sprintf(' Time(UTC):%s', gmdate("d.m.Y H:i:s",$unixsecs));
 				$i+=4;
+				// Generate Traveltime:
+				if(isset($args['hiveRxTime'])){
+					$traveltime=strtotime($args['hiveRxTime'])-$unixsecs;
+					$txtdata.= sprintf(' Traveltime(min):%d:%02u',$traveltime/60,$traveltime%60);
+				}
 			}
 			if($cnt-$i>=1){
 				$anzn=ord($strdata[$i+1]);
@@ -166,7 +172,7 @@ $dstr.="\n";
 
 if(!isset($args['deviceId'])) xdie("No JSON 'deviceId'");
 
-$deviceId = $args['deviceId'];
+$deviceId = $args['deviceId'].'/0x'.dechex($args['deviceId']);
 $subj = "SWARM DeviceId: $deviceId";
 $from = "Jo's SWARM-Mailer";
 
