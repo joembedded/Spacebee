@@ -164,7 +164,7 @@ for($i=0;$i<$cnt;$i++){ // Make data printable
 	else $txtdata.=chr($c);
 }
 
-$dstr="PlainMessage: \"$txtdata\"\n\nSourceData:\n"; // $dstr: Mail Content
+$dstr="Message: \"$txtdata\"\n\nSourceData:\n"; // $dstr: Mail Content
 foreach ($args as $name => $value) { // Add Header Data
     $dstr.= " - $name: $value\n";
 }
