@@ -87,17 +87,17 @@ _'Test' sends a dummy message_
 If the message starts with '!', followed by a valid mailaddress and a space character, the text after the space (and only the text) is also sent to this mailaddress.
 So e.g. ```TD "!joembedded@gmail.com Can you hear me, Jo?"``` will send it to me ;-)
 
-### What comes next:
+### Next step:
 
 ## Nirwana2Cloud - IoT-Satellite gateway for the Nowhere
 ### With SDI-12-Interface and BluetoothLE
 
-This is a real world solution for up to 50 sensors, connected via SDI-12 (LowVoltage).
+This is a real world solution for up to 50 sensors, connected via SDI-12 (LowVoltage). Local access for setup via BluetoothLE!
 
 ![Nirwana2Cloud](./img/Nirvana2Cloud_swarm.jpg)
 ![Nirwana2Cloud](./img/station_leobee.jpg)
 
-_'Nirwana2Cloud': The Webhook from this Repo already can decode the sensor data!_
+_'Nirwana2Cloud' (available as commercial system)_
 
 
 * Based on the Open-SDI12-Blue project (https://github.com/joembedded/Open-SDI12-Blue). 
