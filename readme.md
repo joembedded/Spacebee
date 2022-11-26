@@ -61,7 +61,7 @@ Tip: search for satellite names "Spacebee-xx").
 The distance range of SWARM data transmission is incredible impressive: Under good conditions, the modem can track a Spacbee for up to about 8 minutes. In this time, the satellite has moved almost 4000 km! 
 Communication takes place in the VHF band at about 140 MHz @ 1 Watt TX power and a LoRa-based transmission system is used. Remember: a large ground plane and a matched antenna is absolutely important!
 
-A maximum of 90 minutes (but usually much faster) after a Spacbee has received a message from the modem, it is sent to the Hive via a ground station. 
+A maximum of 90 minutes (but usually much faster) after a Spacbee has received a message from the modem, it is sent to the Hive via a (receiving) ground station. 
 A test measurement for 40 messages, from the point of measurement to arrival in the hive is in ['img/Traveltimes.png'](./img/Traveltimes.png) (measured at 49° latitude).
 
 For the downlink, i.e. data from the Hive to the modem, the Hive uses the (known) GPS position of the modem to transmit to one of the next passing Spacbee. Therefore, this can sometimes take a little longer 
