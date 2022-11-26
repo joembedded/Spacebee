@@ -2,10 +2,10 @@
 /* deliver.php - WEBHOOK - SWARM data mailer
 * Requires: Extra Header 'mailto: MAILADDRESS'
 *
-* V0.2 - 23.11.2022
+* V0.3 - 25.11.2022
 * (C)JoEmbedded.de
 *
-* Added support for binary payload
+* Added decoder for binary payloads from "Aquatos LEO Bee"
 * Please note: 'deliver_light.php' is a smaller version: message only, without payload decoder
 */
 
@@ -59,9 +59,9 @@ function get_ef32($valstr){
 		$errno = $hval&0xFFFFFF;
 		return "Error:$errno";
 	}
-	return round(binary32Decode($hval),8); // Float hat max. 8 Stellen
+	return round(decode_f32($hval),8); // Float max. 8 Digits
 }
-function binary32Decode($bin)
+function decode_f32($bin) // U32 -> Float IEEE 754
 {
     $sign = ($bin & 0x80000000) > 0 ? -1 : 1;
     $exp = (($bin & 0x7F800000) >> 23);
