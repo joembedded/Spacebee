@@ -2,11 +2,9 @@
 /* deliver.php - WEBHOOK - SWARM data mailer
 * Requires: Extra Header 'mailto: MAILADDRESS'
 *
-* V0.3 - 25.11.2022
+* V0.1 - 03.09.2022
 * (C)JoEmbedded.de
 *
-* Added decoder for binary payloads from "Aquatos LEO Bee"
-* Please note: 'deliver_light.php' is a smaller version: message only, without payload decoder
 */
 
 error_reporting(E_ALL);
@@ -46,45 +44,6 @@ function xdie($reason){ // Exit with Error
 	echo "ERROR: $reason\n";
 	exit();
 }
-// Payload Functions START
-function get_i16($valstr){
-	return unpack('n',$valstr)[1];
-}
-function get_u32($valstr){
-	return unpack('N',$valstr)[1];
-}
-function get_ef32($valstr){
-	$hval=intval(unpack('N',$valstr)[1]);
-	if(($hval>>24)==0xFD) {
-		$errno = $hval&0xFFFFFF;
-		return "Error:$errno";
-	}
-	return round(decode_f32($hval),8); // Float max. 8 Digits
-}
-function decode_f32($bin) // U32 -> Float IEEE 754
-{
-    $sign = ($bin & 0x80000000) > 0 ? -1 : 1;
-    $exp = (($bin & 0x7F800000) >> 23);
-    $mantis = ($bin & 0x7FFFFF);
-
-    if ($mantis == 0 && $exp == 0) {
-        return 0;
-    }
-    if ($exp == 255) {
-        if ($mantis == 0) return INF;
-        if ($mantis != 0) return NAN;
-    }
-
-    if ($exp == 0) { // denormalisierte Zahl
-        $mantis /= 0x800000;
-        return $sign * pow(2, -126) * $mantis;
-    } else {
-        $mantis |= 0x800000;
-        $mantis /= 0x800000;
-        return $sign * pow(2,$exp - 127) * $mantis;
-    }
-}
-// Payload Functions END
 
 // ******* MAIN ********
 $xlog = ""; // LogVariable
@@ -107,64 +66,13 @@ $strdata=base64_decode($args['data']);
 $cnt=strlen($strdata);
 
 $txtdata=""; // What was sent by $TD
-
 for($i=0;$i<$cnt;$i++){ // Make data printable
 	$c=ord($strdata[$i]);
-	if($c<32 || $c>127) {
-		switch($c){	// Isolate PLHDRS - Try to get as much as possible, even fragments
-		case 128:	// PLHDR_RTN - PayloadHeader
-			$txtdata.= "=== Payload(RTN):";
-			if($cnt-$i>=2){
-				$flags=get_i16(substr($strdata,$i+1,2));
-				$txtdata.= sprintf(' Flags:%d', $flags);
-				$i+=2;
-			}
-			if($cnt-$i>=4){
-				$unixsecs=get_u32(substr($strdata,$i+1,4));
-				$txtdata.= sprintf(' Time(UTC):%s', gmdate("d.m.Y H:i:s",$unixsecs));
-				$i+=4;
-				// Generate Traveltime:
-				$traveltime=time()-$unixsecs;
-				$th=floor($traveltime/3600); $traveltime -= $th*3600;
-				$tmin=floor($traveltime/60);  $traveltime -= $tmin*60;
-				$txtdata.= sprintf(' Traveltime:%dh,%dmin,%dsec',$th,$tmin,$traveltime);
-			}
-			if($cnt-$i>=1){
-				$anzn=ord($strdata[$i+1]);
-				$txtdata.= sprintf(" N(#):%d ===\n", $anzn); // No Of Values following
-				$i++;
-				for($j=0;$j<$anzn;$j++){	// Channel-Values
-					if($cnt-$i>=4){
-						$chanstr = get_ef32(substr($strdata,$i+1,4));
-						$txtdata.= "#$j: $chanstr\n";
-						$i+=4;
-					}
-				}
-			}
-			while($cnt-$i>=3){	// HK-Values
-				$hkno=ord($strdata[$i+1]);
-				if($hkno==90){
-					$hkvbat=get_i16(substr($strdata,$i+2,2));
-					$fval=round($hkvbat/1000,3);
-					$txtdata.= "HK_Bat: $fval V\n";
-				}else if($hkno==91){
-					$hktemp=get_i16(substr($strdata,$i+2,2));
-					$fval=round($hktemp/100,2);
-					$txtdata.= "HK_Temp: $fval oC\n";
-				}else break;	
-				$i+=3;
-			}
-			$txtdata.= "===";
-			
-			break;
-		default:
-			$txtdata.= sprintf('\x%02X', $c); 
-		}
-	}
+	if($c<32 || $c>127) $txtdata.= sprintf('\x%02X', $c); 
 	else $txtdata.=chr($c);
 }
 
-$dstr="Message: \"$txtdata\"\n\nSourceData:\n"; // $dstr: Mail Content
+$dstr="PlainMessage: \"$txtdata\"\n\nSourceData:\n"; // $dstr: Mail Content
 foreach ($args as $name => $value) { // Add Header Data
     $dstr.= " - $name: $value\n";
 }
@@ -172,7 +80,7 @@ $dstr.="\n";
 
 if(!isset($args['deviceId'])) xdie("No JSON 'deviceId'");
 
-$deviceId = $args['deviceId'].'/0x'.dechex($args['deviceId']);
+$deviceId = $args['deviceId'];
 $subj = "SWARM DeviceId: $deviceId";
 $from = "Jo's SWARM-Mailer";
 
