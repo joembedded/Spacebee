@@ -107,9 +107,11 @@ _'Aquatos LEO Bee inside' (available as commercial system from TerraTransfer Gmb
 
 ![Aquatos LEO Bee S](./img/station_leobee.jpg)
 
-_'Aquatos LEO Bee' includes a free license (commecial use included) for the 'LTX Microcloud'!_
+_'Aquatos LEO Bee' includes a completely free license (commecial use included) for the 'LTX Microcloud'!_
 
 ![LTX Microcloud](./img/G-Draw_kl.jpg)
+
+Connected Sensor: Open-SDI12-Blue Radar Distance Sensor FMR20 (Device Type 390)
 
 Link: [LTX Microcloud](https://github.com/joembedded/LTX_server)
 
