@@ -105,8 +105,6 @@ _'Aquatos LEO Bee inside' (available as commercial system from TerraTransfer Gmb
 * Almost ALL SDI-12 sensors on the market with a low supply voltage can be connected!
 * Docu will follow soon...
 
-![Aquatos LEO Bee S](./img/station_leobee.jpg)
-
 _'Aquatos LEO Bee' includes a completely free license (commecial use included) for the 'LTX Microcloud'!_
 
 ![LTX Microcloud](./img/G-Draw_kl.jpg)
