@@ -42,7 +42,7 @@ The commands of the modem are simple and can be sent very easily with the SparkF
 
 The M138 modem contain 3 very bright LEDs: 
 - &#128308; Red will be blinking after Power On until at least a valid GPS time is found,
-- &#128994; Green flashes all few seconds and 
+- &#128994; Green flashes all few seconds (signals function) and 
 - &#128309; Blue signals satellite activity.
 
 It is advisable to set the "Receive Test" to e.g. 10 seconds. During this time, the modem continuously displays the noise floor or detected satellites. 
