@@ -52,7 +52,7 @@ However, all messages entered are stored on the modem in a non-volatile (NV) mem
 then bring the modem (e.g. with a USB power supply) outdoors and wait. With a running PC in the direct proximity, the noise floor is often higher than -90 dBm and thus too high,
 but even a few metres away from "interferers" is quite sufficient to reach top values (below -100 dBm), even in urban areas. 
 
-Tests have shown, that Bluetooth LE has no significant influence to the noisefloor and a Bluetooth LE based gateway (based on the Open-SDI12-Blue project (https://github.com/joembedded/Open-SDI12-Blue)) will follow soon!
+Tests have shown, that BluetoothLE has no significant influence to the noisefloor. For a BluetoothLE based gateway (based on the Open-SDI12-Blue project (https://github.com/joembedded/Open-SDI12-Blue)) see below.
 
 As a rule, it does not take long for satellites to come within range (on average, about 15-60 minutes max.). For the "impatient", SWARM offers the tool Pass-Checker (https://kube.tools.swarm.space), 
 but since the orbital data of almost all satellites are public, there are many other visualisation tools available on the internet (e.g. https://www.n2yo.com, https://satellitetracker.net/ etc.). 
@@ -89,21 +89,29 @@ So e.g. ```TD "!joembedded@gmail.com Can you hear me, Jo?"``` will send it to me
 
 ### Next step:
 
-## Nirwana2Cloud - IoT-Satellite gateway for the Nowhere
+## Terratransfer Aquatos LEO Bee - IoT-Satellite gateway for the Nowhere
 ### With SDI-12-Interface and BluetoothLE
 
 This is a real world solution for up to 50 sensors, connected via SDI-12 (LowVoltage). Local access for setup via BluetoothLE!
 
-![Nirwana2Cloud](./img/Nirvana2Cloud_swarm.jpg)
-![Nirwana2Cloud](./img/station_leobee.jpg)
+![Aquatos LEO Bee inside](./img/Nirvana2Cloud_swarm.jpg)
+![Aquatos LEO Bee S](./img/station_leobee.jpg)
 
-_'Nirwana2Cloud' (available as commercial system)_
+_'Aquatos LEO Bee inside' (available as commercial system from TerraTransfer GmbH)_
 
 
 * Based on the Open-SDI12-Blue project (https://github.com/joembedded/Open-SDI12-Blue). 
 * The Open-SDI12-Blue project already was ported to many meteorolgical and hydrological sensors
 * Almost ALL SDI-12 sensors on the market with a low supply voltage can be connected!
 * Docu will follow soon...
+
+![Aquatos LEO Bee S](./img/station_leobee.jpg)
+
+_'Aquatos LEO Bee' includes a free license (commecial use included) for the 'LTX Microcloud'!_
+
+![LTX Microcloud](./img/G-Draw_kl.jpg)
+
+Link: [LTX Microcloud](https://github.com/joembedded/LTX_server)
 
 ***
 
