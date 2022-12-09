@@ -103,7 +103,7 @@ _'Aquatos LEO Bee inside' (available as commercial system from TerraTransfer Gmb
 * Based on the Open-SDI12-Blue project (https://github.com/joembedded/Open-SDI12-Blue). 
 * The Open-SDI12-Blue project already was ported to many meteorolgical and hydrological sensors
 * Almost ALL SDI-12 sensors on the market with a low supply voltage can be connected!
-* Docu will follow soon...
+* Docu: https://joembedded.de/x3/ltx_firmware -> Open-SDI12-Blue-Sensors -> 0900_Aquatos_LEO_SWARM
 
 _'Aquatos LEO Bee' includes a completely free license (commecial use included) for the 'LTX Microcloud'!_
 
