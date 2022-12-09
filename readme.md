@@ -97,7 +97,7 @@ This is a real world solution for up to 50 sensors, connected via SDI-12 (LowVol
 ![Aquatos LEO Bee inside](./img/Nirvana2Cloud_swarm.jpg)
 ![Aquatos LEO Bee S](./img/station_leobee.jpg)
 
-_'Aquatos LEO Bee inside' (available as commercial system from TerraTransfer GmbH)_
+_'Aquatos LEO Bee' inside (available as commercial system from TerraTransfer GmbH)_
 
 
 * Based on the Open-SDI12-Blue project (https://github.com/joembedded/Open-SDI12-Blue). 
