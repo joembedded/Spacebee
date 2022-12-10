@@ -109,6 +109,7 @@ _'Aquatos LEO Bee' includes a completely free license (commecial use included) f
 ![LTX Microcloud](./img/G-Draw_kl.jpg)
 
 Connected Sensor: Open-SDI12-Blue Radar Distance Sensor FMR20 (Device Type 390).
+
 Manual for the 'Aquatos LEO SWARM' (only in German): https://joembedded.de/x3/ltx_firmware/index.php?dir=./Open-SDI12-Blue-Sensors/0900_Aquatos_LEO_SWARM -> PDF
 
 Link: [The free LTX Microcloud](https://github.com/joembedded/LTX_server)
