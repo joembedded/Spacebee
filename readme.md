@@ -94,11 +94,10 @@ So e.g. ```TD "!joembedded@gmail.com Can you hear me, Jo?"``` will send it to me
 
 This is a real world solution for up to 50 sensors, connected via SDI-12 (LowVoltage). Local access for setup via BluetoothLE!
 
-![Aquatos LEO Bee inside](./img/Nirvana2Cloud_swarm.jpg)
-![Aquatos LEO Bee S](./img/station_leobee.jpg)
+![Aquatos LEO SWARM inside](./img/Nirvana2Cloud_swarm.jpg)
+![Aquatos LEO SWARM PW-001](./img/station_leobee.jpg)
 
-_'Aquatos LEO Bee' inside (available as commercial system from TerraTransfer GmbH)_
-
+_'Aquatos LEO SWARM' inside (available as commercial system from TerraTransfer GmbH)_
 
 * Based on the Open-SDI12-Blue project (https://github.com/joembedded/Open-SDI12-Blue). 
 * The Open-SDI12-Blue project already was ported to many meteorolgical and hydrological sensors
@@ -109,9 +108,10 @@ _'Aquatos LEO Bee' includes a completely free license (commecial use included) f
 
 ![LTX Microcloud](./img/G-Draw_kl.jpg)
 
-Connected Sensor: Open-SDI12-Blue Radar Distance Sensor FMR20 (Device Type 390)
+Connected Sensor: Open-SDI12-Blue Radar Distance Sensor FMR20 (Device Type 390).
+Manual for the 'Aquatos LEO SWARM' (only in German): https://joembedded.de/x3/ltx_firmware/index.php?dir=./Open-SDI12-Blue-Sensors/0900_Aquatos_LEO_SWARM -> PDF
 
-Link: [LTX Microcloud](https://github.com/joembedded/LTX_server)
+Link: [The free LTX Microcloud](https://github.com/joembedded/LTX_server)
 
 ***
 
