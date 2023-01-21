@@ -56,7 +56,7 @@ Tests have shown, that BluetoothLE has no significant influence to the noisefloo
 
 As a rule, it does not take long for satellites to come within range (on average, about 15-60 minutes max.). For the "impatient", SWARM offers the tool Pass-Checker (https://kube.tools.swarm.space), 
 but since the orbital data of almost all satellites are public, there are many other visualisation tools available on the internet (e.g. https://www.n2yo.com, https://satellitetracker.net/ etc.). 
-Tip: search for satellite names "Spacebee-xx"). Or this one https://github.com/joembedded/LEO-Satellite-Viewer :
+Tip: search for satellite names "Spacebee-xx"). This one is from me: https://github.com/joembedded/LEO-Satellite-Viewer
 
 ![The Spacebees from Swarm](./img/spacebee_kl.jpg)
 
