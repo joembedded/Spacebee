@@ -56,11 +56,11 @@ Tests have shown, that BluetoothLE has no significant influence to the noisefloo
 
 As a rule, it does not take long for satellites to come within range (on average, about 15-60 minutes max.). For the "impatient", SWARM offers the tool Pass-Checker (https://kube.tools.swarm.space), 
 but since the orbital data of almost all satellites are public, there are many other visualisation tools available on the internet (e.g. https://www.n2yo.com, https://satellitetracker.net/ etc.). 
-Tip: search for satellite names "Spacebee-xx"). This one is from me: https://github.com/joembedded/LEO-Satellite-Viewer
+Tip: search for satellite names "Spacebee-xx"). This one is from me: https://github.com/joembedded/LEO-Satellite-Viewer (Red: coverage tracks for 1h)
 
 ![The Spacebees from Swarm](./img/spacebee_kl.jpg)
 
-_LEO View - LIVE:_ https://joembedded.github.io/LEO-Satellite-Viewer 
+_LEO View_ - LIVE: https://joembedded.github.io/LEO-Satellite-Viewer
 
 
 The distance range of SWARM data transmission is incredible impressive: Under good conditions, the modem can track a Spacbee for up to about 8 minutes. In this time, the satellite has moved almost 4000 km! 
