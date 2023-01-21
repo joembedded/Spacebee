@@ -56,7 +56,12 @@ Tests have shown, that BluetoothLE has no significant influence to the noisefloo
 
 As a rule, it does not take long for satellites to come within range (on average, about 15-60 minutes max.). For the "impatient", SWARM offers the tool Pass-Checker (https://kube.tools.swarm.space), 
 but since the orbital data of almost all satellites are public, there are many other visualisation tools available on the internet (e.g. https://www.n2yo.com, https://satellitetracker.net/ etc.). 
-Tip: search for satellite names "Spacebee-xx").
+Tip: search for satellite names "Spacebee-xx"). Or this one (https://github.com/joembedded/LEO-Satellite-Viewer):
+
+![The Spacebees from Swarm](./img/spacebee_kl.jpg)
+
+_LIVE:_ https://joembedded.github.io/LEO-Satellite-Viewer 
+
 
 The distance range of SWARM data transmission is incredible impressive: Under good conditions, the modem can track a Spacbee for up to about 8 minutes. In this time, the satellite has moved almost 4000 km! 
 Communication takes place in the VHF band at about 140 MHz @ 1 Watt TX power and a LoRa-based transmission system is used. Remember: a large ground plane and a matched antenna is absolutely important!
@@ -85,7 +90,7 @@ _'Test' sends a dummy message_
 ### A nice gimmick:
 
 If the message starts with '!', followed by a valid mailaddress and a space character, the text after the space (and only the text) is also sent to this mailaddress.
-So e.g. ```TD "!joembedded@gmail.com Can you hear me, Jo?"``` will send it to me ;-)
+So e.g. ```TD "!joXXXXXXX@gmail.com Can you hear me, Jo?"``` will send it to 'joXXXXXXX@gmail.com' ;-)
 
 ### Next step:
 
@@ -111,6 +116,7 @@ _'Aquatos LEO Bee' includes a completely free license (commecial use included) f
 Connected Sensor: Open-SDI12-Blue Radar Distance Sensor FMR20 (Device Type 390).
 
 Manual for the 'Aquatos LEO SWARM' (only in German): https://joembedded.de/x3/ltx_firmware/index.php?dir=./Open-SDI12-Blue-Sensors/0900_Aquatos_LEO_SWARM -> PDF
+(also other gateways, e.g. for 'ASTROCAST' are available).
 
 Link: [The free LTX Microcloud](https://github.com/joembedded/LTX_server)
 
