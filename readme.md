@@ -2,7 +2,9 @@
 ## A PHP Webhook for SWARM IoT Satellites
 ![ProjectSpacebee Logo](./img/spacebee.jpg)
 
-# <div style="background: yellow;">Info: SWARM has stopped selling modems End of 2023!</div>
+# ---------------------------------------------------
+# Info: SWARM has stopped selling modems End of 2023!
+# ---------------------------------------------------
 
 This repository contains a webhook in PHP for the satellite IoT of SWARM (https://swarm.space). With SWARM, messages can be sent and received worldwide via satellite in the simplest way!
 
