@@ -2,6 +2,8 @@
 ## A PHP Webhook for SWARM IoT Satellites
 ![ProjectSpacebee Logo](./img/spacebee.jpg)
 
+## _Info: SWARM has stopped selling modems End of 2023! 
+
 This repository contains a webhook in PHP for the satellite IoT of SWARM (https://swarm.space). With SWARM, messages can be sent and received worldwide via satellite in the simplest way!
 
 SWARM operates a network of currently (09/2022) about 150 small satellites in low earth orbit of about 500-600km height. The speed of these "LEO" satellites (for "Low-Earth-Orbit") is about 7.5 km/sec 
